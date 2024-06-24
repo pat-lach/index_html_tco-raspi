@@ -1,0 +1,483 @@
+html,
+Body {
+  font-family: "calibri";
+  font-size: 13px;
+  text-align: center;
+  color:blue;
+  ;
+}
+h1, th , p {
+  vertical-align: center;
+  font-family: "calibri";
+  text-align: center;
+  color:blue;
+  font-weight: bold;
+  font-size:13px;
+}
+.text_Red {
+	color:red;
+	font-size:16px;
+	display: inline;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+img,
+a,
+table,
+th,
+tr,
+td {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+tbody {
+  border-left: hidden;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
+
+/* .centre {
+  display: inline-block;
+} */
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width:60px
+}
+
+tr {
+  height: 40px; 
+  width: 60px;
+}
+th {
+  height: 40px; 
+  width: 60px;
+  font-weight: bold;
+}
+.row0 {
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+}
+.row {
+  border-right: 2px solid red;
+  border-bottom: hidden;
+}
+td  {
+  text-align: left;
+  vertical-align: top;
+ /* border: 1px dashed blue; /* uncomment for better control*/
+}
+.case {
+  width: 60px; /* taille moins les border! */
+  height: 40px; /* taille moins les border! */
+  overflow: hidden;
+  position: relative;
+}
+.casef {
+  width: 60px; /* taille moins les border! */
+  height: 40px; /* taille moins les border! */
+  overflow: hidden;
+  position: relative;
+}
+.over {
+  font-family: "Calibri";
+  font-size: 18px;
+  font-weight: bold;
+  /*text-align: center;*/
+  color:blue;
+  position: absolute;
+  top:  5%;
+  left: 50%;
+}
+.over1 {
+  font-family: "Calibri";
+  font-size: 18px;
+  font-weight: bold;
+  /*text-align: center;*/
+  color: blue;
+  position: absolute;
+  top:  -60%;
+  left: 10%; 
+}
+.turn {
+  font-family: "Calibri";
+  font-size: 18px;
+  font-weight: bold;
+  /*text-align: center;*/
+  color: fuchsia;
+  position: absolute;
+  top:  -60%;
+  left: 20%; 
+}
+.turn1 {
+  font-family: "Calibri";
+  font-size: 18px;
+  font-weight: bold;
+  /*text-align: center;*/
+  color: fuchsia;
+  position: absolute;
+  top:  -60%;
+  left: 50%; 
+}
+.rep {
+  width: 60px; /* taille moins les border! */
+  height: 40px; /* taille moins les border! */
+  overflow: hidden;
+}
+/* MQTT Web dasboard */
+
+.wrapper {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+	margin: 0;
+	text-align: left;
+    /* width:10%; */
+	/* resize: horizontal; */
+    padding-right: 2px;
+    padding-left: 2px;
+	display:inline;
+	font-size: 12px;
+}
+form
+	display:flex>
+input {
+    width : 14px;
+	  resize: horizontal;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type=text] {
+    width:8%;
+	font-size: 12px;
+	text-align: center;
+    padding: 0px 0px;
+    height: 15px;
+    margin: 1px 1px;
+}
+.red-alert {
+color:red;
+}
+input[type=password] {
+    width:8%;
+    padding: 2px 2px;
+    height: 15px;
+    margin: 4px 2px;
+}
+input[type=button] {
+    background-color: lightblue;
+	width:10%;
+    border: none;
+    color: black;
+    text-decoration: none;
+    /* font-weight: bold; */
+    height: 18px;
+    margin: 2px, 2px;
+    cursor: pointer;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+input[type=button]:hover {
+    background-color: #686868;
+}
+#Main_heading{
+     text-align: center;
+}
+#messages {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+    width:70%;
+    display: inline-block;
+    border:1px solid black;
+    max-height: 100px;
+    min-height: 20px;
+    overflow: scroll;
+}
+
+#messages span {
+    overflow-y: scroll;
+    overflow: scroll;
+}
+
+/* Les rails */
+
+/* Les rails droits */
+[class*="droite_"] {
+  background-image :url('/sprites/droites.png')
+ }
+.droite_h_lv1 {
+  background-position: 0 0;
+}
+.droite_h_lv2 {
+  background-position: -60px 0;
+}
+.droite_h_lv3 {
+  background-position: -120px 0;
+}
+.droite_v_lv1 {
+  background-position: 0px -40px;
+}
+.droite_v_lv2 {
+  background-position: -60px -40px;
+}
+.droite_v_lv3 {
+  background-position: -120px -40px;
+}
+.droite_d_lv1 {
+  background-position: 0px -80px;
+}
+.droite_d_lv2 {
+  background-position: -60px -80px;
+}
+.droite_d_lv3 {
+  background-position: -120px -80px;
+}
+.droite_g_lv1 {
+  background-position: 0px -120px;
+}
+.droite_g_lv2 {
+  background-position: -60px -120px;
+}
+.droite_g_lv3 {
+  background-position: -120px -120px;
+}
+.droite_st_lv1 {
+  background-position: 0px -160px;
+}
+.droite_st_lv2 {
+  background-position: -60px -160px;
+}
+.droite_st_lv3 {
+  background-position: -120px -160px;
+}
+
+/* Les rails courbes */
+[class*="courbe_"] {
+  background-image: url('/sprites/courbes.png');
+}
+.courbe_h_bl_lv1 {
+  background-position: 0px 0px;
+}
+.courbe_h_bl_lv2 {
+  background-position: -60px 0px;
+}
+.courbe_h_bl_lv3 {
+  background-position: -120px 0px;
+}
+.courbe_h_br_lv1 {
+  background-position: 0px -40px;
+}
+.courbe_h_br_lv2 {
+  background-position: -60px -40px;
+}
+.courbe_h_br_lv3 {
+  background-position: -120px -40px;
+}
+
+.courbe_h_tl_lv1 {
+  background-position: 0px -80px;
+}
+.courbe_h_tl_lv2 {
+  background-position: -60px -80px;
+}
+.courbe_h_tl_lv3 {
+  background-position: -120px -80px;
+}
+.courbe_h_tr_lv1 {
+  background-position: 0px -120px;
+}
+.courbe_h_tr_lv2 {
+  background-position: -60px -120px;
+}
+.courbe_h_tr_lv3 {
+  background-position: -120px -120px;
+}
+
+.courbe_v_tr_lv1 {
+  background-position: 0px -160px;
+}
+.courbe_v_tr_lv2 {
+  background-position: -60px -160px;
+}
+.courbe_v_tr_lv3 {
+  background-position: -120px -160px;
+}
+.courbe_v_tl_lv1 {
+  background-position: 0px -200px;
+}
+.courbe_v_tl_lv2 {
+  background-position: -60px -200px;
+}
+.courbe_v_tl_lv3 {
+  background-position: -120px -200px;
+}
+
+.courbe_v_br_lv1 {
+  background-position: 0px -240px;
+}
+.courbe_v_br_lv2 {
+  background-position: -60px -240px;
+}
+.courbe_v_br_lv3 {
+  background-position: -120px -240px;
+}
+.courbe_v_bl_lv1 {
+  background-position: 0px -280px;
+}
+.courbe_v_bl_lv2 {
+  background-position: -60px -280px;
+}
+.courbe_v_bl_lv3 {
+  background-position: -120px -280px;
+}
+
+/* Sprites des feux */
+
+[class*="feu_"] {
+  object-fit: none;
+  width: 60px;
+  height: 40px;
+}
+.feu_1_vert {
+  object-position: 0px 0px;
+}
+.feu_1_rouge {
+  object-position: -60px 0px;
+}
+.feu_1_orange {
+  object-position: -120px 0px;
+}
+.feu_2_vert {
+  object-position: 0px -40px;
+}
+.feu_2_rouge {
+  object-position: -60px -40px;
+}
+.feu_2_orange {
+  object-position: -120px -40px;
+}
+.feu_3_blanc {
+  object-position: 0px -80px;
+}
+.feu_3_violet {
+  object-position: -60px -80px;
+}
+.feu_4_blanc {
+  object-position: 0px -120px;
+}
+.feu_4_violet {
+  object-position: -60px -120px;
+}
+
+/* Sprites des aiguillage */
+/* les fonds */
+[class*="aig_back_"] {
+  background-image: url('/sprites/aiguilles_back.png');
+}
+.aig_back_br {
+  background-position: 0px 0px;
+}
+.aig_back_tr {
+  background-position: 0px -40px;
+}
+.aig_back_tl {
+  background-position: 0px -80px;
+}
+.aig_back_bl {
+  background-position: 0px -120px;
+}
+.aig_back_fork_r {
+  background-position: 0px -160px;
+}
+.aig_back_fork_l {
+  background-position: 0px -200px;
+}
+.aig_back_tri_r {
+  background-position: 0px -240px;
+}
+.aig_back_tri_l {
+  background-position: 0px -280px;
+}
+/* Les positions */
+.aig_pos_br_1 {
+  object-position: 0px 0px;
+}
+.aig_pos_br_2 {
+  object-position: -60px 0px;
+}
+.aig_pos_tr_1 {
+  object-position: 0px -40px;
+}
+.aig_pos_tr_2 {
+  object-position: -60px -40px;
+}
+.aig_pos_tl_1 {
+  object-position: 0px -80px;
+}
+.aig_pos_tl_2 {
+  object-position: -60px -80px;
+}
+.aig_pos_bl_1 {
+  object-position: 0px -120px;
+}
+.aig_pos_bl_2 {
+  object-position: -60px -120px;
+}
+.aig_pos_fork_r_1 {
+  object-position: 0px -160px;
+}
+.aig_pos_fork_r_2 {
+  object-position: -60px -160px;
+}
+.aig_pos_fork_l_1 {
+  object-position: 0px -200px;
+}
+.aig_pos_fork_l_2 {
+  object-position: -60px -200px;
+}
+.aig_pos_tri_r_1 {
+  object-position: 0px -240px;
+}
+.aig_pos_tri_r_4 {
+  object-position: 0px -240px;
+}
+.aig_pos_tri_r_2 {
+  object-position: -60px -240px;
+}
+.aig_pos_tri_r_3 {
+  object-position: -120px -240px;
+}
+.aig1_pos_tri_r_1 {
+  object-position: 0px -240px;
+}
+.aig1_pos_tri_r_4 {
+  object-position: 0px -240px;
+}
+.aig1_pos_tri_r_2 {
+  object-position: -60px -240px;
+}
+.aig1_pos_tri_r_3 {
+  object-position: -120px -240px;
+}
+.aig_pos_tri_l_1 {
+  object-position: 0px -280px;
+}
+.aig_pos_tri_l_2 {
+  object-position: -60px -280px;
+}
+.aig_pos_tri_l_3 {
+  object-position: -120px -280px;
+}
