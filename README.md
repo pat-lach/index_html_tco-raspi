@@ -1,6 +1,6 @@
 # TCO to MQTT
 
-Website to pilot the train
+Website to pilot the train.
 
 This code is functional but needs to be optimized and simplified.
     •	It allows to display a HTML page on different PCs, tablets, telephones.
