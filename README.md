@@ -40,7 +40,7 @@ ENCODAGE DU PAYLOAD
 L'encodage du payload va dépendre fortement du type de device concerné par le message.
 De même que le format sera assez libre pour les messages de debug.
      •    composer de 3 parties.
-          -> pour la commande: la nouvelle valeur de la position \ Id de l'aiguillage \ l'ID du client
-          -> pour la synchronisation des autres client : 
-             le nom de la class de l'image \ Id de l'aiguillage \ l'ID du client qui a demandé le changement.
+          o		pour la commande: la nouvelle valeur de la position \ Id de l'aiguillage \ l'ID du client
+          o 	pour la synchronisation des autres client : 
+          o     le nom de la class de l'image \ Id de l'aiguillage \ l'ID du client qui a demandé le changement.
 
